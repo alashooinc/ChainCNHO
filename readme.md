@@ -2,17 +2,40 @@
 **cnho** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
 
 ## Get started
+### System
 
+
+### Build Binary
 ```
-ignite chain serve
+cd ${codePath}
+git clone https://github.com/alashooinc/ChainCNHO
+export GOROOT=~/gdk/go1.19.13
+git clone https://github.com/alashooinc/ChainCNHO
+cd ChainCNHO
+go build -o cnho_stables -gcflags all="-N -l" cnho/cmd/cnhod
+ls -a cnho_stables
 ```
 
 `serve` command installs dependencies, builds, initializes, and starts your blockchain in development.
 
-### Configure
+### Build Node 
+```
+cd ${codePath}/ChainCNHO
+chmod +x cnho_stables
+./cnho_stables init cnho_stables-2
+cp -rf mainnet/genesis.json ~/.cnho/config/genesis.json
+vi ~/.cnho/config/config.toml
+Modify Field of [seeds] as seeds="c03cc5c48b1b9aba7ec5258510d386de6e88806@172.105.116.194:26656"
+vi ~/.cnho/config/client.toml
+Modify Field of [chain-id] as chain-id = "cnho_stables-1"
+```
+### Run The Chain
+```
+cd ${codePath}/ChainCNHO
 
-Your blockchain in development can be configured with `config.yml`. To learn more, see the [Ignite CLI docs](https://docs.ignite.com).
+./cnho_stables start
 
+```
 ### Web Frontend
 
 Ignite CLI has scaffolded a Vue.js-based web app in the `vue` directory. Run the following commands to install dependencies and start the app:
@@ -25,23 +48,6 @@ npm run serve
 
 The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Ignite front-end development](https://github.com/ignite/web).
 
-## Release
-To release a new version of your blockchain, create and push a new tag with `v` prefix. A new draft release with the configured targets will be created.
-
-```
-git tag v0.1
-git push origin v0.1
-```
-
-After a draft release is created, make your final changes from the release page and publish it.
-
-### Install
-To install the latest version of your blockchain node's binary, execute the following command on your machine:
-
-```
-curl https://get.ignite.com/username/cnho@latest! | sudo bash
-```
-`username/cnho` should match the `username` and `repo_name` of the Github repository to which the source code was pushed. Learn more about [the install process](https://github.com/allinbits/starport-installer).
 
 ## Learn more
 
