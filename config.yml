@@ -1,0 +1,41 @@
+version: 1
+build:
+  binary: cnho_stables
+  proto:
+    path: proto
+accounts:
+  - name: treasury
+    coins:
+      - 1000000000000000ucnho
+  - name: foundation
+    coins:
+      - 200000000000000ucnho
+  - name: offshorelab
+    coins:
+      - 99979900000000ucnho
+  - name: validatorone
+    coins:
+      - 20000000000ucnho
+  - name: faucet
+    coins:
+      - 100000000ucnho
+client:
+  openapi:
+    path: docs/static/openapi.yml
+faucet:
+  name: faucet
+  coins:
+    - 100000000ucnho
+  host: 0.0.0.0:1688
+validators:
+  - name: validatorone
+    bonded: 10000000000ucnho
+genesis:
+  app_state:
+    crisis:
+      constant_fee:
+        denom: ucnho
+    staking:
+      params:
+        bond_denom: ucnho
+  chain_id: cnho_stables-1

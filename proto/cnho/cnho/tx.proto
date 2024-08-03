@@ -1,0 +1,7 @@
+syntax = "proto3";
+package cnho.cnho;
+
+option go_package = "cnho/x/cnho/types";
+
+// Msg defines the Msg service.
+service Msg {}
