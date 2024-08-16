@@ -10,7 +10,6 @@
 cd ${codePath}
 git clone https://github.com/alashooinc/ChainCNHO
 export GOROOT=~/gdk/go1.19.13
-git clone https://github.com/alashooinc/ChainCNHO
 cd ChainCNHO
 go build -o cnho_stables -gcflags all="-N -l" cnho/cmd/cnhod
 ls -a cnho_stables
@@ -25,7 +24,7 @@ chmod +x cnho_stables
 ./cnho_stables init cnho_stables-2
 cp -rf mainnet/genesis.json ~/.cnho/config/genesis.json
 vi ~/.cnho/config/config.toml
-Modify Field of [seeds] as seeds="c03cc5c48b1b9aba7ec5258510d386de6e88806@172.105.116.194:26656"
+Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@172.105.116.194:26656"
 vi ~/.cnho/config/client.toml
 Modify Field of [chain-id] as chain-id = "cnho_stables-1"
 ```
