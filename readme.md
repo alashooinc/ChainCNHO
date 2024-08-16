@@ -4,8 +4,10 @@
 ## Get started by Download
 ### Download the Binary cnho_stables
 [Centos7+](https://159.138.232.248/resource/ChainCNHO/cnho_stables1.0.0.bin)
+
 ### Download the file genesis.json 
 [genesis.json](https://github.com/alashooinc/ChainCNHO/blob/master/mainnet/genesis.json)
+
 #### Build The Node
 ```
 Put them to the home path of host and than do such like bellow
@@ -48,8 +50,11 @@ cp -rf mainnet/genesis.json ~/.cnho/config/genesis.json
 vi ~/.cnho/config/config.toml
 Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@172.105.116.194:26656"
 vi ~/.cnho/config/client.toml
+
 Modify Field of [chain-id] as chain-id = "cnho_stables-1"
+
 ```
+
 ### Run The Chain
 ```
 cd ${codePath}/ChainCNHO
@@ -68,7 +73,6 @@ npm run serve
 ```
 
 The frontend app is built using the `@starport/vue` and `@starport/vuex` packages. For details, see the [monorepo for Ignite front-end development](https://github.com/ignite/web).
-
 
 ## Learn more
 
