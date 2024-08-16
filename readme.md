@@ -16,6 +16,7 @@ $ cp -rf genesis.json ~/.cnho/config/genesis.json
 $ vi ~/.cnho/config/config.toml
 
 Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@172.105.116.194:26656"
+
 ```
 ### Run The Chain
 ```
@@ -36,8 +37,6 @@ cd ChainCNHO
 go build -o cnho_stables -gcflags all="-N -l" cnho/cmd/cnhod
 ls -a cnho_stables
 ```
-
-`serve` command installs dependencies, builds, initializes, and starts your blockchain in development.
 
 ### Build The Node 
 ```
