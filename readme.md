@@ -27,6 +27,7 @@ $ ./cnho_stables start
 ### System Requirements
 ```
 Release:Ubuntu 20.04
+Release:golang 1.19
 ```
 ### Build Binary
 ```
