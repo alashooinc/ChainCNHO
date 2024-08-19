@@ -28,12 +28,12 @@ $ ./cnho_stables start
 ## Get started with code from github
 ### System Requirements
 ```
-Release:Ubuntu 20.04
-Release:golang 1.19
+Release:Ubuntu 20.04+
+Release:golang 1.19.13 and be sure to install it at path "~/gdk/go1.19.13"
 ```
 ### Build Binary
 ```
-cd ${codePath}
+cd ~/
 git clone https://github.com/alashooinc/ChainCNHO
 export GOROOT=~/gdk/go1.19.13
 cd ChainCNHO
@@ -43,7 +43,7 @@ ls -a cnho_stables
 
 ### Build The Node 
 ```
-cd ${codePath}/ChainCNHO
+cd ~/ChainCNHO
 chmod +x cnho_stables
 ./cnho_stables init cnho_stables-2
 cp -rf mainnet/genesis.json ~/.cnho/config/genesis.json
@@ -57,12 +57,12 @@ Modify Field of [chain-id] as chain-id = "cnho_stables-1"
 
 ### Run The Chain
 ```
-cd ${codePath}/ChainCNHO
+cd ~/ChainCNHO
 
 ./cnho_stables start
 
 ```
-### Web Frontend
+## Web Frontend
 
 Ignite CLI has scaffolded a Vue.js-based web app in the `vue` directory. Run the following commands to install dependencies and start the app:
 
