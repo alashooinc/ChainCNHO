@@ -10,7 +10,7 @@
 
 #### Build The Node
 ```
-Put them to the home path of host and than do such like bellow
+Put them to the home path of host and than do such like below
 $ mv cnho_stablesx.x.x.bin cnho_stablesx
 $ chmod +x cnho_stables
 $ ./cnho_stables init cnho_stables-2
