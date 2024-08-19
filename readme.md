@@ -25,7 +25,7 @@ Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@172.1
 $ ./cnho_stables start
 ```
 
-## Get started with code from github
+## Get started with source code from github
 ### System Requirements
 ```
 Release:Ubuntu 20.04+
