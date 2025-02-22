@@ -3,13 +3,16 @@
 
 ## Get started by Download
 ### Download the Binary cnho_stables
-[Centos7+](https://159.138.232.248/resource/ChainCNHO/cnho_stables1.0.0.bin)
+[Centos7+](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.bin)
+[Windons10/11](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.exe)
+[Mac OS X](https://cnho.io/resource/ChainCNHO/cnho_stables)
 
 ### Download the file genesis.json 
 [genesis.json](https://github.com/alashooinc/ChainCNHO/blob/master/mainnet/genesis.json)
 
 #### Build The Node
 ```
+Centos-
 Put them to the home path of host and than do such like below
 $ mv cnho_stablesx.x.x.bin cnho_stablesx
 $ chmod +x cnho_stables
@@ -18,6 +21,15 @@ $ cp -rf genesis.json ~/.cnho/config/genesis.json
 $ vi ~/.cnho/config/config.toml
 
 Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656"
+
+Windows-
+Download the executable file cnho_stables.exe
+cnho_stables.exe init ${nodeName}
+Download the genesis configuration from https://github.com/alashooinc/ChainCNHO/mainnet/genesis.json to ${userHome}.cnho\config\genesis.json
+Modify the local genesis configuration file ${userHome}.cnho\config\genesis.json
+Change the item [seeds] to seeds=”94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656”
+Modify the local chain configuration ${userHome}.cnho\config\client.toml
+Change the item [chain-id] to chain-id = “cnho_stables-1”
 
 ```
 ### Run The Chain
