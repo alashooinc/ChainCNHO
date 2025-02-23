@@ -25,8 +25,7 @@ Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@seeds
 Windows-
 Download the executable file cnho_stables.exe
 cnho_stables.exe init ${nodeName}
-Download the genesis configuration from https://github.com/alashooinc/ChainCNHO/mainnet/genesis.json to ${userHome}.cnho\config\genesis.json
-Modify the local genesis configuration file ${userHome}.cnho\config\genesis.json
+Replace the genesis.json configuration to ${userHome}.cnho\config\genesis.json Or Modify the local genesis configuration file ${userHome}.cnho\config\genesis.json with the newly downloaded genesis.json
 Change the item [seeds] to seeds=”94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656”
 Modify the local chain configuration ${userHome}.cnho\config\client.toml
 Change the item [chain-id] to chain-id = “cnho_stables-1”
