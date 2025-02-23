@@ -34,6 +34,7 @@ Change the item [chain-id] to chain-id = “cnho_stables-1”
 ### Run The Chain
 ```
 $ ./cnho_stables start
+ Or windows start cnho_stables.exe
 ```
 
 ## Get started with source code from github
