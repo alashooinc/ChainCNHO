@@ -1,7 +1,7 @@
 # cnho
 **cnho** is a blockchain built using Cosmos SDK and Tendermint and created with [Ignite CLI](https://ignite.com/cli).
 
-## Option ONE-Get started by Download excutable Binary!
+## Option ONE-Get started by Download executable Binary!
 ### Download the Binary cnho_stables
 [Centos7+](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.bin)
 [Windons10/11](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.exe)
