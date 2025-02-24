@@ -34,7 +34,7 @@ Mac OS X
 Download the executable file cnho_stables
 cnho_stables init ${nodeName} e.g cnho_stables init ALASHOOINC
 Replace the genesis.json configuration to ~/.cnho/config/genesis.json Or Modify the local genesis configuration file ~/.cnho/config/genesis.json with the newly downloaded genesis.json
-Change the item [seeds] to seeds=”94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656”
+Modify the local chain seeds(cd ~/.cnho/config/config.toml) by command vim config.toml, Change the field [seeds] to seeds=”94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656”
 Modify the local chain configuration ~/.cnho/config/client.toml by command vim client.toml
 Change the item [chain-id] to chain-id = “cnho_stables-1”
 
