@@ -19,7 +19,6 @@ $ chmod +x cnho_stables
 $ ./cnho_stables init cnho_stables-2
 $ cp -rf genesis.json ~/.cnho/config/genesis.json
 $ vi ~/.cnho/config/config.toml
-
 Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656"
 
 Windows-
