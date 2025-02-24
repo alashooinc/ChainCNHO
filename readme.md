@@ -5,7 +5,7 @@
 ### Download the Binary cnho_stables
 [Centos7+](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.bin)
 [Windons10/11](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.exe)
-[Mac OS X](https://cnho.io/resource/ChainCNHO/cnho_stables)
+[Mac OS X](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.mac)
 
 ### Download the file genesis.json 
 [genesis.json](https://github.com/alashooinc/ChainCNHO/blob/master/mainnet/genesis.json)
