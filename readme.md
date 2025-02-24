@@ -23,7 +23,7 @@ $ vi ~/.cnho/config/config.toml
 Modify Field of [seeds] as seeds="94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656"
 
 Windows-
-Download the executable file [cnho_stables.exe](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.bin)
+Download the executable file cnho_stables.exe
 cnho_stables.exe init ${nodeName}
 Replace the genesis.json configuration to ${userHome}.cnho\config\genesis.json Or Modify the local genesis configuration file ${userHome}.cnho\config\genesis.json with the newly downloaded genesis.json
 Change the item [seeds] to seeds=”94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656”
