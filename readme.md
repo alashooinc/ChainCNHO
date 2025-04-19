@@ -19,13 +19,13 @@ $ chmod +x cnho_stables
 $ ./cnho_stables init cnho_stables-2
 $ cp -rf genesis.json ~/.cnho/config/genesis.json
 $ vi ~/.cnho/config/config.toml
-Modify Field of [seeds] as seeds="c5afa68170530e128018e12cd463d15823e34ce9@seeds.cnho.io:26656"
+Modify Field of [seeds] as seeds="c5afa68170530e128018e12cd463d15823e34ce9@seeds.cnho.io:26656,9b9dee928a174bcd0272be9127f5f455d418d6b2@cnhostables_mainnet_peer.chain.whenmoonwhenlambo.money:30000"
 
 Windows-
 Download the executable file cnho_stables.exe
 cnho_stables.exe init ${nodeName}
 Replace the genesis.json configuration to ${userHome}.cnho\config\genesis.json Or Modify the local genesis configuration file ${userHome}.cnho\config\genesis.json with the newly downloaded genesis.json
-Change the item [seeds] to seeds=”94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656”
+Change the item [seeds] to seeds=”94e013d19485dc70a4a20477b7879cda4af47b55@seeds.cnho.io:26656,9b9dee928a174bcd0272be9127f5f455d418d6b2@cnhostables_mainnet_peer.chain.whenmoonwhenlambo.money:30000”
 Modify the local chain configuration ${userHome}.cnho\config\client.toml
 Change the item [chain-id] to chain-id = “cnho_stables-1”
 
@@ -33,7 +33,7 @@ Mac OS X
 Download the executable file cnho_stables_mac1.0.0.bin,and change the file name from cnho_stables_mac1.0.0.bin to cnho_stables.
 cnho_stables init ${nodeName} e.g cnho_stables init ALASHOOINC
 Replace the genesis.json configuration to ~/.cnho/config/genesis.json Or Modify the local genesis configuration file ~/.cnho/config/genesis.json with the newly downloaded genesis.json
-Modify the local chain seeds(cd ~/.cnho/config/config.toml) by command vim config.toml, Change the field [seeds] to seeds=”9d9d614fc02b46c86f9a2ea2452e2d043629d91e@seeds.cnho.io:26656”
+Modify the local chain seeds(cd ~/.cnho/config/config.toml) by command vim config.toml, Change the field [seeds] to seeds=”9d9d614fc02b46c86f9a2ea2452e2d043629d91e@seeds.cnho.io:26656,9b9dee928a174bcd0272be9127f5f455d418d6b2@cnhostables_mainnet_peer.chain.whenmoonwhenlambo.money:30000”
 Modify the local chain configuration ~/.cnho/config/client.toml by command vim client.toml
 Change the item [chain-id] to chain-id = “cnho_stables-1”
 
