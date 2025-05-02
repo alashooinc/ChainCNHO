@@ -7,6 +7,10 @@
 [Windons10/11](https://cnho.io/resource/ChainCNHO/cnho_stables1.0.0.exe)
 [Mac OS X](https://cnho.io/resource/ChainCNHO/cnho_stables_mac1.0.0.bin)
 
+* [Centos 7+](https://pan.baidu.com/s/1X26In0sNUbBG1amppijAHw?pwd=jb22)
+* [Windows 10/11](https://pan.baidu.com/s/1DMWUEgYCqGzsh8-kab3Xrg?pwd=7xcq)
+* [Mac OS X](https://pan.baidu.com/s/1raKc3s7TgSMLpGmmnErurw?pwd=fg24)
+
 ### Download the file genesis.json 
 [genesis.json](https://github.com/alashooinc/ChainCNHO/blob/master/mainnet/genesis.json)
 
